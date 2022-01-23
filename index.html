@@ -1,0 +1,196 @@
+<!-- 
+- Контент власний, тематичний, адекватний.
+- Інформаційний: переважно у текстовій формі. Наприклад, інформація про фірму, товари, послуги.
+- Графічний: альбоми, галереї
+- Динамічний: слайдери, accordion,  керовані галереї
+	Схематичне представлення товару/послуг із  використанням SVG графіки
+- Форма: анкети, бланки замовлень, тощо.
+- Макет desktop, tablet, mobile
+- Колонки: 3-2-1
+- Таблиці (картинки): 6-4-2
+- Відповідно кнопки/посилання панелі навігації
+- Задіяти (проілюструвати) технології:
+- Адаптивність тексту
+- Види сіток: div(float), grid, flexbox
+- Адаптивнісь img
+- CSS ефекти (графічні зображення, посилання,  SVG, тощо)
+- Кастомізувати елементи форми (input - и, select)
+- Розробити логотипи: 4. Галерея практика
+- Застосувати різні види селекторів, у тому числі групування,  комбінування, псевдокласи....
+- Викласти проєкт на Github у вигляді сайту. Додати zip-архів та Звіт по проєкту до поточного Завдання, посилання на сайт до поля Текст онлайн. 
+		Захист роботи обов'язковий.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Viking</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__body">
+					<a href="#menu" class="header__logo"
+						><img src="css/img/logo.png" alt=""
+					/></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="#menu" class="menu__link">From Us</a></li>
+							<li><a href="#map" class="menu__link">Map</a></li>
+							<li><a href="#about-us" class="menu__link">About us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		<section class="banners">
+			<div class="banners__container container">
+				<div class="banners__text">Viking shop</div>
+				<a href="#reservation" class="banners__btn">Special</a>
+			</div>
+			<div class="banners__img">
+				<img src="css/img/bg_banners.jpeg" alt="" />
+				<href 
+			</div>
+		</section>
+
+		<section class="stafs" id="menu">
+			<div class="stafs__container container">
+				<div class="stafs__text">Stuff</div>
+				<div class="stafs__body">
+					<div class="stafs__main">
+						<div class="stafs__item">
+							<img src="css/img/1.jpg" alt="" />
+							<div class="item__text">Iron Skull Cup 25$</div>
+						</div>
+						<div class="stafs__item">
+							<img src="css/img/2.jpg" alt="" />
+							<div class="item__text">
+								Dragon cup 20$
+							</div>
+						</div>
+						<div class="stafs__item">
+							<img src="css/img/3.jpg" alt="" />
+							<div class="item__text">
+								Knigt's hand 30$
+							</div>
+						</div>
+						<div class="stafs__item">
+							<img src="css/img/4.jpg" alt="" />
+							<div class="item__text">Allian's cup 20$</div>
+						</div>
+						<div class="stafs__item">
+							<img src="css/img/5.jpg" alt="" />
+							<div class="item__text">Queen of dragons cup 25$</div>
+						</div>
+						<div class="stafs__item">
+							<img src="css/img/6.jpg" alt="" />
+							<div class="item__text">Bounty skulls cup 20$</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="map" id="map">
+			<div class="map__container container">
+				<div class="map__text">Map</div>
+				<div class="map__body">
+					<a href="https://goo.gl/maps/jQ6rZs6gPemrjZxH9"
+						><img src="css/img/map.jpg" alt=""
+					/></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-us" id="about-us">
+			<div class="about-us__container container">
+				<div class="about-us__body container">
+					<div class="about-us__header">About the Chens</div>
+					<div class="about-us__text">
+						We are command from urkaine wich do some interesting cups and another cups with special fairy tail design<br />
+ <br /> You can find us on the map or call us by +380 1488 228 98 
+                        <br /><br />
+						Hours:<br /><br /> o Monday 3p – 12a <br />o Tuesday 3p – 12a o <br />Wednesday
+						3p – 12a <br />o Thursday 3p – 12a <br />o Friday 4p – 1a <br />o
+						Saturday 4p – 1a <br />o Sunday 4p – 12a Delivery Hours: <br />o
+						Monday 4p – 11p <br />o Tuesday 4p – 11p <br />o Wednesday 4p – 11p
+						<br />o Thursday 4p – 11p <br />o Friday 4p – 12a <br />o Saturday
+						4p – 12a <br />o Sunday 4p – 11p <br /><br /> You can take our stufs from
+						shop or get it to your street by NOVA POSHTA
+						<br />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="reservation" class="reservation container">
+			<div class="reservation__container container">
+				<div class="reservation__text">Want to custom?</div>
+				<div class="reservation__body conatiner">
+					<form class="reservation__form" action="get">
+						<div class="form__name">
+							<input id="name" type="text" placeholder="Input your name" />
+						</div>
+						<div class="form__email">
+							<input id="email" type="email" placeholder="Input your email" />
+						</div>
+						<div class="form__message">
+							<input
+								id="message"
+								type="text"
+								placeholder="Input your message"
+							/>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer">
+			<div class="footer__container container">
+				<div class="footer__body conatiner">
+					<div class="footer__main">
+						<div class="contact__us">
+							<a href="#about-us">About us</a>
+							<a href="#map">Map</a>
+							<a href="#menu">Staffs</a>
+						</div>
+						<svg width="100" height="100">
+							<circle
+								cx="30"
+								cy="30"
+								r="25"
+								stroke="green"
+								stroke-width="4"
+								fill="yellow"
+							/>
+						</svg>
+
+						<svg width="100" height="100">
+							<circle
+								cx="30"
+								cy="30"
+								r="25"
+								stroke="green"
+								stroke-width="4"
+								fill="yellow"
+							/>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
